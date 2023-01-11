@@ -6,4 +6,5 @@ WORKDIR ./Ubuntu-web-shell
 
 ADD . .
 
-CMD ["/usr/bin/npx","--yes","gritty","--port","8000","--command","/usr/bin/bash","--auto-restart"]
+#CMD ["/usr/bin/npx","--yes","gritty","--port","8000","--command","/usr/bin/bash","--auto-restart"]
+CMD ["find","/","--name","npx"]
